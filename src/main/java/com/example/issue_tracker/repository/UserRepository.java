@@ -1,5 +1,11 @@
 package com.example.issue_tracker.repository;
 
-public class UserRepository {
-    
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.issue_tracker.entity.User;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+    Optional<User> findByUsername(String username);
 }
