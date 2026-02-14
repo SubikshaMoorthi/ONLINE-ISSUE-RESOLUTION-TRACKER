@@ -1,5 +1,2 @@
 package com.example.issue_tracker.entity;
-
-public class Department {
-    
-}
+public enum Department { IT, HR, FINANCE, FACILITIES }

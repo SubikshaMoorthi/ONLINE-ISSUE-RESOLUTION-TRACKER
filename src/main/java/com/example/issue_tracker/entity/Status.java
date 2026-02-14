@@ -1,5 +1,2 @@
 package com.example.issue_tracker.entity;
-
-public class Status {
-    
-}
+public enum Status { OPEN, ASSIGNED, ONGOING, RESOLVED, CLOSED }
