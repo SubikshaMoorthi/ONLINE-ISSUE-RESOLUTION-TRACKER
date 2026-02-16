@@ -1,11 +1,10 @@
 package com.example.issue_tracker.repository;
 
+import com.example.issue_tracker.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.example.issue_tracker.entity.User;
-
 public interface UserRepository extends JpaRepository<User, Long> {
-    Optional<User> findByUsername(String username);
+    // Add this line to allow searching by email
+    Optional<User> findByEmail(String email); 
 }
